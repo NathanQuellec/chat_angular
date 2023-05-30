@@ -42,7 +42,6 @@ export class ChatContentComponent {
       text: text
     };
     this.messageText = '';
-    //this.messages.push(message);
     this.webSocketService.send(message);
   }
 
