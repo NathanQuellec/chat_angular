@@ -1,0 +1,15 @@
+<div class="chat-container">
+    <div class="message-list">
+      <div class="message" *ngFor="let message of messages">
+        <div class="message-info">
+          <span class="sender">{{ message.sender }} </span>
+          <span class="time">{{ message.time }}</span>
+        </div>
+        <div class="message-text">{{ message.text }}</div>
+      </div>
+    </div>
+    <form (ngSubmit)="sendMessage(messageInput.value)">
+      <input type="text" placeholder="Votre message..." #messageInput required>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>

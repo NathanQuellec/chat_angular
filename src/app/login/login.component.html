@@ -1,0 +1,12 @@
+<div class="login-container">
+    <div class="login-form">
+      <h2>Bienvenue sur Spring Chat !</h2>
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <div>
+          <label for="username">Pseudo:</label>
+          <input type="text" id="username"  name="username" #username="ngModel" ngModel required>
+        </div>
+        <button type="submit">Se connecter</button>
+      </form>
+    </div>
+  </div>
